@@ -1,4 +1,6 @@
 import React from 'react'
+import Stripe from './Stripe'
+import Stripes from './Stripes'
 
 const Work = () => {
 
@@ -12,11 +14,12 @@ const Work = () => {
     ]
   return (
     <div className='w-full mt-10'>
-        <div className='relative max-w-screen-xl m-auto text-center'>
+        <div className='relative w-full text-center'>
             <h1 className='text-[30vw] leading-none font-medium select-none tracking-tight'>work</h1>
             <div className='absolute top-0 w-full h-full'>
                 {images.map((elem, index)=>(elem.isActive && (<img className='absolute w-52 h-70 rounded-lg -translate-x-[50%] -translate-y-[50%]' src={elem.url} style={{top: elem.top, left: elem.left}} alt="" key={index} />)))}
             </div>
+            <Stripes />
         </div>
     </div>
   )

@@ -30,7 +30,7 @@ const Navbar = ({isDarkMode, toggleTheme}) => {
             </Link>
             <Link to={"/work"}>
             <p className="hover:text-gray-400">
-                Projects
+                Work
             </p>
             </Link>
             <Link to={"/skill"}>
@@ -52,9 +52,9 @@ const Navbar = ({isDarkMode, toggleTheme}) => {
             {/* Theme Toggle Icon */}
             <button onClick={toggleTheme}>
                 {isDarkMode ? (
-                <MdOutlineLightMode className="h-5 w-5 cursor-pointer hover:scale-125" />
+                <MdOutlineLightMode className="h-5 w-5 cursor-pointer hover:scale-150 transition-transform duration-300" />
                 ) : (
-                <MdOutlineDarkMode className="h-5 w-5 cursor-pointer hover:scale-125" />
+                <img className='w-[30px] cursor-pointer hover:scale-155 transition-transform duration-300 animate-spin [animation-direction:reverse] [animation-duration:2.5s]' src="saringan.png" alt="" />
                 )}
           </button>
         </div>
